@@ -74,10 +74,18 @@ function App(){
 
         switch (operator) {
             case "/":
-                calc = String(parseFloat(preState) / parseFloat(curState))
 
-                if (calc.length > 9) {
-                    calc = calc.slice(0, 9);
+                if(curState)
+                {
+                    setError(true)
+                }
+                else
+                {
+                    calc = String(parseFloat(preState) / parseFloat(curState))
+
+                    if (calc.length > 9) {
+                        calc = calc.slice(0, 9);
+                    }
                 }
             break;
             
@@ -92,6 +100,10 @@ function App(){
                 {
                     setError(false)
                     console.log(error)
+
+                    if (calc.length > 9) {
+                    calc = calc.slice(0, 9);
+                    }
                 }
             break;
             
@@ -106,6 +118,10 @@ function App(){
                 {
                     setError(false)
                     console.log(error)
+
+                    if (calc.length > 9) {
+                    calc = calc.slice(0, 9);
+                    }
                 }
             break;
             
@@ -123,6 +139,10 @@ function App(){
                     else
                     {
                         setError(false)
+
+                        if (calc.length > 9) {
+                        calc = calc.slice(0, 9);
+                        }
                     }
                 }
                 else
