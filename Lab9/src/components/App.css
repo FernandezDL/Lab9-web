@@ -1,0 +1,128 @@
+
+@font-face {
+    font-family: calculator;
+    src: url(fuentes/Calculator.ttf);
+}
+
+.fondo{
+    background-color: #fdc7c0;
+
+    width: 310px;
+    height: 515px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 10px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    border-radius: 20px;
+    border: 3px solid #ff8680;
+    box-shadow: 10px 10px 0 0 #ff8680;
+}
+
+.display{
+    width: 90%;
+    height: 50px;
+
+    background-color: #f9e8e0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+    padding: 12px;
+
+    border-radius: 20px;
+    border: 2.5px solid #e09d94;
+    box-shadow: 2px 2px 0 0 #e09d94;
+
+    font-family: calculator;
+    font-size: xx-large;
+}
+
+.botones{
+    width: 60px;
+    height: 60px;
+
+    background-color: #f8ece3;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #e09d94;
+    box-shadow: 2px 2px 0 0 #e09d94;
+}
+
+.botones:hover{
+    background-color: #ebd5c4;
+
+    border: 2px solid #ca8f87;
+}
+
+.botonesOp{
+    width: 60px;
+    height: 60px;
+
+    background-color: #e5e5e3;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #e09d94;
+    box-shadow: 2px 2px 0 0 #e09d94;
+}
+
+.botonesOp:hover{
+    background-color: #cacac9;
+
+    border: 2px solid #ca8f87;
+}
+
+.botonCero{
+    width: 140px;
+    height: 100%;
+
+    background-color: #f8ece3;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #e09d94;
+    box-shadow: 2px 2px 0 0 #e09d94;
+}
+
+.botonCero:hover{
+    background-color: #ebd5c4;
+
+    border: 2px solid #ca8f87;
+}
+
+.fila{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.filaAbajo{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}

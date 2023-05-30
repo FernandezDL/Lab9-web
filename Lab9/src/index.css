@@ -1,0 +1,15 @@
+body{
+    background-color: #fdd1cb;
+}
+
+#root{
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px;
+
+    font-size: large;
+}
